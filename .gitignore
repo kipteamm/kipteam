@@ -1,0 +1,4 @@
+# Ignore replit files (can be removed soon)
+.replit
+.breakpoints
+replit.nix
