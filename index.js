@@ -41,3 +41,11 @@ function toggleSamples() {
 
     samplesShown = true
 }
+
+function submit() {
+    description = document.getElementById('description').value;
+    firstName = document.getElementById('first-name').value;
+    lastName = document.getElementById('last-name').value;
+    email = document.getElementById('email').value;
+    additional = document.getElementById('additional').value;
+}

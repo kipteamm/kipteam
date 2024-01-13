@@ -113,7 +113,7 @@
                     </p>
                 </div>
                 
-                <div class="bg-slate-100 p-7 m-5 rounded-lg duration-300 hover:scale-110 border-2 border-transparent hover:border-[#fdc891] hover:cursor-pointer" onclick="window.open('https://mareekdevelopment.pythonanywhere.com/')">
+                <div class="bg-slate-100 p-7 m-5 rounded-lg duration-300 hover:scale-110 border-2 border-transparent hover:border-[#fdc891] hover:cursor-pointer" onclick="window.open('https://www.maree-k.be/')">
                     <span class="py-1 px-2.5 bg-[#fdc891] rounded-full whitespace-nowrap inline-block mb-2.5">Paid</span>
                     <span class="py-1 px-2.5 bg-[#fdc891] rounded-full whitespace-nowrap inline-block mb-2.5">Backend</span>
                     <span class="py-1 px-2.5 bg-[#fdc891] rounded-full whitespace-nowrap inline-block mb-2.5">Frontend</span>
@@ -186,103 +186,16 @@
     <section class="my-20">
         <div class="max-w-7xl mx-auto text-center">
             <h1 class="max-w-md font-bold sm:text-6xl m-auto text-5xl">Let's work <span class="relative">together<span class="absolute z-[-1] bg-[#c2ebb6] -rotate-3 w-full h-2/3 left-0 rounded-[20%] my-[8%]"></span></span></h1>
-            <p class="text-slate-600 mt-5 max-w-xl sm:mx-auto m-10">I'd love to work with you on your awesome projects! It is as easy as contacting me. If you are wondering if my work is trustworthy, <a>hear it from others.</a></p>
+            <p class="text-slate-600 mt-5 max-w-xl sm:mx-auto mb-5">I'd love to work with you on your awesome projects! It is as easy as contacting me. If you are wondering if my work is trustworthy, <a href="#testimonials">hear it from others.</a></p>
 
-            <div class="grid lg:grid-cols-2 mt-10 sm:grid-cols-1">
-                <div class="bg-slate-100 p-7 m-5 rounded-lg text-left text-slate-600 lg:h-auto h-[475px]">
-                    <div class="w-full h-full flex flex-col" id="stage-1">
-                        <h2 class="font-bold text-black">Standard package</h2>
-                        <ul class="list-disc ps-10">
-                            <li>€15 per hour (discount after 30 hours of work*)</li>
-                            <li>No web applications.</li>
-                            <li>No full time jobs.</li>
-                        </ul>
-
-                        <p class="mt-2.5 italic text-sm">
-                            * After 30 hours of work, my rate will drop to €10 per hour.
-                        </p>
-
-                        <h2 class="font-bold text-black mt-auto">Social package</h2>
-                        <ul class="list-disc ps-10">
-                            <li>Struggling businesses, personal projects.</li>
-                            <li>€10 per hour (discount after 30 hours of work*)</li>
-                            <li>No web applications.</li>
-                            <li>No full time jobs.</li>
-                        </ul>
-
-                        <p class="mt-2.5 italic text-sm">
-                            * After 30 hours of work, my rate will drop to €5 per hour.
-                        </p>
-                    </div>
-                    
-                    <div class="w-full h-full hidden flex-col" id="stage-2">
-                        <h2 class="font-bold text-black">What is your project about?</h2>
-                        <p class="mt-2.5 italic text-sm hover:cursor-pointer" onclick="toggleSamples()">
-                            Not sure what to say? 
-                        </p>
-                        <ul class="list-disc ps-10 text-sm duration-300 h-0 overflow-hidden" id="samples">
-                            <li>Your product</li>
-                            <li>Amount of pages</li>
-                            <li>Colour palette (usually related or complementary with your logo)</li>
-                            <li>Reference websites you like</li>
-                            <li>Specific styles</li>
-                            <li>For dynamic sites, dynamic functionalities</li>
-                        </ul>
-
-                        <textarea class="mt-2.5 resize-none w-full box-border p-2.5 rounded-lg outline-none flex-1 duration-300 border-2 border-transparent focus:border-[#fdc891]" placeholder="My cool website."></textarea>
-                    </div>
-
-                    <div class="w-full h-full hidden flex-col" id="stage-3">
-                        <h2 class="font-bold text-black">Who are you?</h2>
-
-                        <input type="text" class="mt-2.5 resize-none w-full box-border p-2.5 rounded-lg outline-none duration-300 border-2 border-transparent focus:border-[#fdc891]" placeholder="First name">
-                        <input type="text" class="mt-2.5 resize-none w-full box-border p-2.5 rounded-lg outline-none duration-300 border-2 border-transparent focus:border-[#fdc891]" placeholder="Last name">
-                        <input type="email" class="mt-2.5 resize-none w-full box-border p-2.5 rounded-lg outline-none duration-300 border-2 border-transparent focus:border-[#fdc891]" placeholder="Email address">
-                        <textarea class="mt-2.5 resize-none w-full box-border p-2.5 rounded-lg outline-none flex-1 duration-300 border-2 border-transparent focus:border-[#fdc891]" placeholder="Anything you would like to add?"></textarea>
-                    
-                        <div class="mt-2.5 text-center">
-                            <button class="bg-slate-200 py-3 px-9 rounded-full mt-auto duration-300 hover:bg-slate-300 hover:cursor-pointer" onclick="submit()">Submit</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-left m-5">
-                    <div class="flex group hover:cursor-pointer" onclick="setStage(this, 1)">
-                        <div class="w-2 mr-4 bg-slate-100 rounded-t-2xl duration-300 group-hover:bg-[#fdc891] group-hover:rounded-2xl active-stage"></div>
-
-                        <div class="p-10">
-                            <h2 class="font-bold text-2xl">1. Pick a package</h2>
-                            <p>
-                                Now about my pricing and what I am willing to do.
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="flex group hover:cursor-pointer" onclick="setStage(this, 2)">
-                        <div class="w-2 mr-4 bg-slate-100 duration-300 group-hover:bg-[#fdc891] group-hover:rounded-2xl"></div>
-
-                        <div class="p-10">
-                            <h2 class="font-bold text-2xl">2. Specify your needs</h2>
-                            <p>
-                                Tell me all about the project you want to build.
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="flex group hover:cursor-pointer" onclick="setStage(this, 3)">
-                        <div class="w-2 mr-4 bg-slate-100 rounded-b-2xl duration-300 group-hover:bg-[#fdc891] group-hover:rounded-2xl"></div>
-
-                        <div class="p-10">
-                            <h2 class="font-bold text-2xl">3. Finish</h2>
-                            <p>
-                                To end things I ask for some personal info.
-                            </p>
-                        </div>
-                    </div> 
-                </div>
-            </div>
+            <p class="text-slate-600">
+                If you are interested, hit me up and send me an email! <br>
+                <a href="mailto:toro.een@gmail.com" class="underline decoration-wavy">toro.een@gmail.com</a>
+            </p>
         </div>
     </section>
 
-    <section class="mt-20 pt-20 pb-40 background-to-top">
+    <section class="mt-20 pt-20 pb-40 background-to-top" id="testimonials">
         <div class="max-w-7xl mx-auto text-center">
             <h1 class="max-w-md font-bold sm:text-6xl m-auto text-5xl">My <span class="relative">satisfied<span class="absolute z-[-1] bg-[#8ad2ec] rotate-2 w-full h-2/3 left-0 rounded-[20%] my-[8%]"></span></span> customers</h1>
             <p class="text-slate-600 mt-5 max-w-xl sm:mx-auto m-10">
